@@ -29,6 +29,7 @@ namespace SubTools
             resources.ApplyResources(c, c.Name, new CultureInfo(lang));
 
         } 
+
         #endregion
     }
 
