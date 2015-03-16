@@ -28,9 +28,18 @@ namespace SubTools
                     ApplyRes(item, lang);
             resources.ApplyResources(c, c.Name, new CultureInfo(lang));
 
-        } 
+        }
 
+        private void FindLanguages()
+        {
+
+        }
         #endregion
+
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 
 
