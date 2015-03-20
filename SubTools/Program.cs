@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Windows.Forms;
 
-namespace SubTools
+namespace PDStudio.SubTools
 {
     static class Program
     {

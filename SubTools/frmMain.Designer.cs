@@ -1,4 +1,4 @@
-﻿namespace SubTools
+﻿namespace PDStudio.SubTools
 {
     partial class frmMain
     {

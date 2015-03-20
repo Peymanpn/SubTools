@@ -7,7 +7,7 @@ using System.Globalization;
 using System.Text;
 using System.Windows.Forms;
 
-namespace SubTools
+namespace PDStudio.SubTools
 {
     public partial class frmMain : Form
     {
