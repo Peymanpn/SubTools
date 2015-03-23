@@ -38,11 +38,7 @@ namespace PDStudio.SubTools
 
         private void frmMain_Load(object sender, EventArgs e)
         {
-
+            PDStudio.SubTools.Plugin.PluginDetect(this);
         }
     }
-
-
- 
-
 }

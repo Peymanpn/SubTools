@@ -5,23 +5,13 @@ using System.Text;
 namespace PDStudio.SubTools
 {
     public delegate void StartPlugin();
-    interface IPlugin
+    public interface IPlugin
     {
         string ClassName { get; }
         System.Version Version { get; }
         StartPlugin StartingMethod { get; }
-        System.Windows.Forms.Form MainForm { get; set; }
+        System.Windows.Forms.Form ProgramMainForm { get; set; }
+        bool LoadCompleted { get; set; }
+        System.Windows.Forms.Form SettingsForm { get; set; }
     }
-
-    public class Plugin
-    {
-        public static bool PluginsDetected
-        {
-            get;
-            set;
-        }
-
-
-    }
-
 }

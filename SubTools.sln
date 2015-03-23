@@ -5,6 +5,12 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubTools", "SubTools\SubTools.csproj", "{35EE7C37-6F89-4703-AAAB-6B21DF20FBF3}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Plugins", "Plugins", "{DA340D2E-834B-4E01-BE70-C7A26DE0C02C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListManager", "Plugins\ListManager\ListManager.csproj", "{14290695-9FDF-4F59-9AD5-EEED5E310057}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TVShowListArragnger", "Plugins\TVShowListArragnger\TVShowListArragnger.csproj", "{B40E31F0-2445-45E9-A85D-C9C851F3A047}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,8 +33,28 @@ Global
 		{35EE7C37-6F89-4703-AAAB-6B21DF20FBF3}.Release|x64.Build.0 = Release|x64
 		{35EE7C37-6F89-4703-AAAB-6B21DF20FBF3}.Release|x86.ActiveCfg = Release|x86
 		{35EE7C37-6F89-4703-AAAB-6B21DF20FBF3}.Release|x86.Build.0 = Release|x86
+		{14290695-9FDF-4F59-9AD5-EEED5E310057}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14290695-9FDF-4F59-9AD5-EEED5E310057}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14290695-9FDF-4F59-9AD5-EEED5E310057}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{14290695-9FDF-4F59-9AD5-EEED5E310057}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{14290695-9FDF-4F59-9AD5-EEED5E310057}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14290695-9FDF-4F59-9AD5-EEED5E310057}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14290695-9FDF-4F59-9AD5-EEED5E310057}.Release|x64.ActiveCfg = Release|Any CPU
+		{14290695-9FDF-4F59-9AD5-EEED5E310057}.Release|x86.ActiveCfg = Release|Any CPU
+		{B40E31F0-2445-45E9-A85D-C9C851F3A047}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B40E31F0-2445-45E9-A85D-C9C851F3A047}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B40E31F0-2445-45E9-A85D-C9C851F3A047}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B40E31F0-2445-45E9-A85D-C9C851F3A047}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B40E31F0-2445-45E9-A85D-C9C851F3A047}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B40E31F0-2445-45E9-A85D-C9C851F3A047}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B40E31F0-2445-45E9-A85D-C9C851F3A047}.Release|x64.ActiveCfg = Release|Any CPU
+		{B40E31F0-2445-45E9-A85D-C9C851F3A047}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{14290695-9FDF-4F59-9AD5-EEED5E310057} = {DA340D2E-834B-4E01-BE70-C7A26DE0C02C}
+		{B40E31F0-2445-45E9-A85D-C9C851F3A047} = {DA340D2E-834B-4E01-BE70-C7A26DE0C02C}
 	EndGlobalSection
 EndGlobal
