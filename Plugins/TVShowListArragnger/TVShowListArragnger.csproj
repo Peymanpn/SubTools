@@ -7,7 +7,7 @@
     <ProjectGuid>{B40E31F0-2445-45E9-A85D-C9C851F3A047}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TVShowListArragnger</RootNamespace>
+    <RootNamespace>PDStudio.SubTools.TVShowListArranger</RootNamespace>
     <AssemblyName>TVShowListArragnger</AssemblyName>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -57,6 +57,11 @@
     <Compile Include="frmTVShowListArranger.Designer.cs">
       <DependentUpon>frmTVShowListArranger.cs</DependentUpon>
     </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
     <Compile Include="TVShowListArranger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -74,6 +79,13 @@
     <EmbeddedResource Include="frmTVShowListArranger.resx">
       <DependentUpon>frmTVShowListArranger.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

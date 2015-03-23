@@ -8,7 +8,8 @@ namespace PDStudio.SubTools.ListManager
     {
         private void RunPlugin()
         {
-            System.Windows.Forms.MessageBox.Show("List Manager");
+            //System.Windows.Forms.MessageBox.Show("List Manager");
+            System.Diagnostics.Debug.WriteLine("List Manager");
         }
         public string ClassName
         {

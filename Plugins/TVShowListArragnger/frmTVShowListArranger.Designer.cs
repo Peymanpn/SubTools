@@ -39,8 +39,9 @@
             // chkAddSeason
             // 
             this.chkAddSeason.AutoSize = true;
-            this.chkAddSeason.Checked = true;
+            this.chkAddSeason.Checked = global::PDStudio.SubTools.TVShowListArranger.Properties.Settings.Default.AddSeasonNo;
             this.chkAddSeason.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkAddSeason.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::PDStudio.SubTools.TVShowListArranger.Properties.Settings.Default, "AddSeasonNo", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.chkAddSeason.Location = new System.Drawing.Point(115, 43);
             this.chkAddSeason.Name = "chkAddSeason";
             this.chkAddSeason.Size = new System.Drawing.Size(124, 17);
@@ -59,11 +60,12 @@
             // 
             // txtSeason
             // 
+            this.txtSeason.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::PDStudio.SubTools.TVShowListArranger.Properties.Settings.Default, "SeasonNo", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtSeason.Location = new System.Drawing.Point(62, 41);
             this.txtSeason.Name = "txtSeason";
             this.txtSeason.Size = new System.Drawing.Size(38, 20);
             this.txtSeason.TabIndex = 14;
-            this.txtSeason.Text = "01";
+            this.txtSeason.Text = global::PDStudio.SubTools.TVShowListArranger.Properties.Settings.Default.SeasonNo;
             // 
             // txtFileContents
             // 
@@ -110,6 +112,7 @@
             this.Controls.Add(this.btnReverseList);
             this.Name = "frmTVShowListArranger";
             this.Text = "frmTVShowListArranger";
+            this.Load += new System.EventHandler(this.frmTVShowListArranger_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
