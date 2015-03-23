@@ -39,5 +39,16 @@ namespace PDStudio.SubTools.ListManager
             get;
             set;
         }
+
+
+        public System.Windows.Forms.Form SettingsForm
+        {
+            get { throw new NotImplementedException(); }
+        }
+
+        public System.Windows.Forms.Form AboutForm
+        {
+            get { throw new NotImplementedException(); }
+        }
     }
 }

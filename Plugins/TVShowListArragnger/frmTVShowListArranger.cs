@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace TVShowListArragnger
+namespace PDStudio.SubTools.TVShowListArranger
 {
     public partial class frmTVShowListArranger : Form
     {
@@ -18,6 +18,11 @@ namespace TVShowListArragnger
         private void btnClose_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void btnReverseList_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

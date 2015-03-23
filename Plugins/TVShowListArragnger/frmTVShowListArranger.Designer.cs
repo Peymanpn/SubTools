@@ -1,4 +1,4 @@
-﻿namespace TVShowListArragnger
+﻿namespace PDStudio.SubTools.TVShowListArranger
 {
     partial class frmTVShowListArranger
     {
@@ -73,7 +73,7 @@
             this.txtFileContents.Location = new System.Drawing.Point(12, 67);
             this.txtFileContents.Multiline = true;
             this.txtFileContents.Name = "txtFileContents";
-            this.txtFileContents.Size = new System.Drawing.Size(249, 255);
+            this.txtFileContents.Size = new System.Drawing.Size(249, 285);
             this.txtFileContents.TabIndex = 13;
             // 
             // btnReverseList
@@ -84,11 +84,12 @@
             this.btnReverseList.TabIndex = 12;
             this.btnReverseList.Text = "Reverse List(From File)";
             this.btnReverseList.UseVisualStyleBackColor = true;
+            this.btnReverseList.Click += new System.EventHandler(this.btnReverseList_Click);
             // 
             // btnClose
             // 
-            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnClose.Location = new System.Drawing.Point(185, 335);
+            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClose.Location = new System.Drawing.Point(185, 372);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(75, 23);
             this.btnClose.TabIndex = 17;
@@ -100,7 +101,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(272, 370);
+            this.ClientSize = new System.Drawing.Size(272, 400);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.chkAddSeason);
             this.Controls.Add(this.label1);
