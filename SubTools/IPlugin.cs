@@ -12,6 +12,7 @@ namespace PDStudio.SubTools
         StartPlugin StartingMethod { get; }
         System.Windows.Forms.Form ProgramMainForm { get; set; }
         bool LoadCompleted { get; set; }
-        System.Windows.Forms.Form SettingsForm { get; set; }
+        System.Windows.Forms.Form SettingsForm { get; }
+        System.Windows.Forms.Form AboutForm { get; }
     }
 }
