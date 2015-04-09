@@ -34,6 +34,7 @@
             this.txtFileContents = new System.Windows.Forms.TextBox();
             this.btnReverseList = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
+            this.numericUpDown1 = new PDStudio.SubTools.TVShowListArranger.NumericUpDown();
             this.SuspendLayout();
             // 
             // chkAddSeason
@@ -61,11 +62,12 @@
             // txtSeason
             // 
             this.txtSeason.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::PDStudio.SubTools.TVShowListArranger.Properties.Settings.Default, "SeasonNo", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.txtSeason.Location = new System.Drawing.Point(62, 41);
+            this.txtSeason.Location = new System.Drawing.Point(147, 14);
             this.txtSeason.Name = "txtSeason";
             this.txtSeason.Size = new System.Drawing.Size(38, 20);
             this.txtSeason.TabIndex = 14;
             this.txtSeason.Text = global::PDStudio.SubTools.TVShowListArranger.Properties.Settings.Default.SeasonNo;
+            this.txtSeason.Visible = false;
             // 
             // txtFileContents
             // 
@@ -99,11 +101,21 @@
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::PDStudio.SubTools.TVShowListArranger.Properties.Settings.Default, "SeasonNo", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.numericUpDown1.Location = new System.Drawing.Point(62, 41);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(40, 20);
+            this.numericUpDown1.TabIndex = 18;
+            this.numericUpDown1.Value = global::PDStudio.SubTools.TVShowListArranger.Properties.Settings.Default.SeasonNo;
+            // 
             // frmTVShowListArranger
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(272, 400);
+            this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.chkAddSeason);
             this.Controls.Add(this.label1);
@@ -126,5 +138,6 @@
         private System.Windows.Forms.TextBox txtFileContents;
         private System.Windows.Forms.Button btnReverseList;
         private System.Windows.Forms.Button btnClose;
+        private NumericUpDown numericUpDown1;
     }
 }

@@ -57,6 +57,12 @@
     <Compile Include="frmTVShowListArranger.Designer.cs">
       <DependentUpon>frmTVShowListArranger.cs</DependentUpon>
     </Compile>
+    <Compile Include="NumericUpDown.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NumericUpDown.Designer.cs">
+      <DependentUpon>NumericUpDown.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
@@ -78,6 +84,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmTVShowListArranger.resx">
       <DependentUpon>frmTVShowListArranger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NumericUpDown.resx">
+      <DependentUpon>NumericUpDown.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
