@@ -27,6 +27,15 @@ namespace PDStudio.SubTools.TVShowListArranger
                     foreach (System.Windows.Forms.ToolStripMenuItem tsmiPlugins in tsmi.DropDownItems)
                         if (tsmiPlugins.Name == "pluginsToolStripMenuItem")
                             tsmiPlugins.DropDownItems.Add(tsmiMain);
+
+            if (TVShowListArranger.Properties.Settings.Default.ShowButtonInMainWindow)
+            {
+                System.Windows.Forms.Button btnStart = new Button();
+                btnStart.Text = tsmiMain.Text;
+                btnStart.Click += tsmiMain_Click;
+                ProgramMainForm.Controls.Add(btnStart);
+            }
+                
                 
             
         }

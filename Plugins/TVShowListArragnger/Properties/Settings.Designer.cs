@@ -58,5 +58,17 @@ namespace PDStudio.SubTools.TVShowListArranger.Properties {
                 this["AddSeasonNo"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool ShowButtonInMainWindow {
+            get {
+                return ((bool)(this["ShowButtonInMainWindow"]));
+            }
+            set {
+                this["ShowButtonInMainWindow"] = value;
+            }
+        }
     }
 }

@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListManager", "Plugins\List
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TVShowListArragnger", "Plugins\TVShowListArragnger\TVShowListArragnger.csproj", "{B40E31F0-2445-45E9-A85D-C9C851F3A047}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UTFConvertor", "Plugins\UTFConvertor\UTFConvertor.csproj", "{7C1D493E-D0CF-4ABA-95D8-A064902E270C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,6 +51,14 @@ Global
 		{B40E31F0-2445-45E9-A85D-C9C851F3A047}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B40E31F0-2445-45E9-A85D-C9C851F3A047}.Release|x64.ActiveCfg = Release|Any CPU
 		{B40E31F0-2445-45E9-A85D-C9C851F3A047}.Release|x86.ActiveCfg = Release|Any CPU
+		{7C1D493E-D0CF-4ABA-95D8-A064902E270C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C1D493E-D0CF-4ABA-95D8-A064902E270C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C1D493E-D0CF-4ABA-95D8-A064902E270C}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{7C1D493E-D0CF-4ABA-95D8-A064902E270C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7C1D493E-D0CF-4ABA-95D8-A064902E270C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C1D493E-D0CF-4ABA-95D8-A064902E270C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C1D493E-D0CF-4ABA-95D8-A064902E270C}.Release|x64.ActiveCfg = Release|Any CPU
+		{7C1D493E-D0CF-4ABA-95D8-A064902E270C}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -56,5 +66,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{14290695-9FDF-4F59-9AD5-EEED5E310057} = {DA340D2E-834B-4E01-BE70-C7A26DE0C02C}
 		{B40E31F0-2445-45E9-A85D-C9C851F3A047} = {DA340D2E-834B-4E01-BE70-C7A26DE0C02C}
+		{7C1D493E-D0CF-4ABA-95D8-A064902E270C} = {DA340D2E-834B-4E01-BE70-C7A26DE0C02C}
 	EndGlobalSection
 EndGlobal

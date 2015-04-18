@@ -15,7 +15,7 @@ namespace PDStudio.SubTools.TVShowListArranger
             InitializeComponent();
         }
         [Category("Behavior")]
-        [DefaultValue(2)]
+
         public int Digits { get; set; }
 
         [Category("Behavior")]
@@ -28,6 +28,12 @@ namespace PDStudio.SubTools.TVShowListArranger
         private void nup_ValueChanged(object sender, EventArgs e)
         {
             txt.Text = nup.Value.ToString("00");
+            Value = nup.Value.ToString("00");
+        }
+
+        private void txt_TextChanged(object sender, EventArgs e)
+        {
+            Value = txt.Text;
         }
 
         

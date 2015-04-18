@@ -40,5 +40,15 @@ namespace PDStudio.SubTools
         {
             PDStudio.SubTools.Plugin.PluginDetect(this);
         }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //(new frmAbout()).ShowDialoge();
+        }
     }
 }
