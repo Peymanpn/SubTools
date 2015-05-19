@@ -45,7 +45,7 @@ namespace PDStudio.SubTools.TVShowListArranger
                             str = str.Insert(0, "E");
                             //season adding
                             if (chkAddSeason.Checked)
-                                str = str.Insert(0, "S" + txtSeason.Text);
+                                str = str.Insert(0, "S" + nudSeason.Value); //was  txtSeason.Text before 
 
                             //removing extra space after epidose no
                             str = str.Remove(7, 1);

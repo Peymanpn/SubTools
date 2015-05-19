@@ -34,7 +34,7 @@
             this.txtFileContents = new System.Windows.Forms.TextBox();
             this.btnReverseList = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
-            this.numericUpDown1 = new PDStudio.SubTools.TVShowListArranger.NumericUpDown();
+            this.nudSeason = new PDStudio.SubTools.TVShowListArranger.NumericUpDown();
             this.SuspendLayout();
             // 
             // chkAddSeason
@@ -101,21 +101,22 @@
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // numericUpDown1
+            // nudSeason
             // 
-            this.numericUpDown1.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::PDStudio.SubTools.TVShowListArranger.Properties.Settings.Default, "SeasonNo", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.numericUpDown1.Location = new System.Drawing.Point(62, 41);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(40, 20);
-            this.numericUpDown1.TabIndex = 18;
-            this.numericUpDown1.Value = global::PDStudio.SubTools.TVShowListArranger.Properties.Settings.Default.SeasonNo;
+            this.nudSeason.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::PDStudio.SubTools.TVShowListArranger.Properties.Settings.Default, "SeasonNo", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.nudSeason.Digits = 0;
+            this.nudSeason.Location = new System.Drawing.Point(62, 41);
+            this.nudSeason.Name = "nudSeason";
+            this.nudSeason.Size = new System.Drawing.Size(40, 20);
+            this.nudSeason.TabIndex = 18;
+            this.nudSeason.Value = global::PDStudio.SubTools.TVShowListArranger.Properties.Settings.Default.SeasonNo;
             // 
             // frmTVShowListArranger
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(272, 400);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.nudSeason);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.chkAddSeason);
             this.Controls.Add(this.label1);
@@ -138,6 +139,6 @@
         private System.Windows.Forms.TextBox txtFileContents;
         private System.Windows.Forms.Button btnReverseList;
         private System.Windows.Forms.Button btnClose;
-        private NumericUpDown numericUpDown1;
+        private NumericUpDown nudSeason;
     }
 }
